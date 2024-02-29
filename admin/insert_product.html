@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Product_Admin </title>
+    <!-- Favicons -->
+    <link href="https://cdn.dotpe.in/longtail/store-logo/8200852/9aIFnzGJ.jpeg" rel="icon">
+    <link href="https://cdn.dotpe.in/longtail/store-logo/8200852/9aIFnzGJ.jpeg" rel="apple-touch-icon">
+    <script src="https://kit.fontawesome.com/eb675fda77.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <img src="https://cdn.dotpe.in/longtail/store-logo/8200852/9aIFnzGJ.jpeg" alt="CAKECITY" />
+                <!-- <h1>CAKECITY<span>.</span></h1> -->
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="admin.html">Home</a></li>
+                    <li><a href="#">Insert Product</a></li>
+                    <li><a href="insert_category.html">Insert Categories</a></li>
+                    <li><a href="category.html">View Categories</a></li>
+                    <li><a href="orders.html">View Orders</a></li>
+                    <li><a href="payment.html">View Payments</a></li>
+                </ul>
+            </nav>
+            <!-- .navbar -->
+            <a class="btn-book-a-table" href="../index.php">Logout</a>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+
+    </header>
+    <section>
+        <div class="container">
+            <h1 class="text-center mt-3">
+                Insert Products
+            </h1>
+            <!-- form -->
+            <form action="" method="post" enctype="multipart/form-data">
+                <!-- product title -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="product_title" class="form-label">Product Title</label>
+                    <input type="text" name="product_title" id="product_title" class="form-control" placeholder="Enter product title" autocomplete="off" required>
+                </div>
+
+                <!-- product description -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="product_description" class="form-label">Product Description</label>
+                    <input type="text" name="product_description" id="product_description" class="form-control" placeholder="Enter product description" autocomplete="off" required>
+                </div>
+
+                <!-- product Keyword -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="product_Keyword" class="form-label">Product Keyword</label>
+                    <input type="text" name="product_keyword" id="product_keyword" class="form-control" placeholder="Enter product keyword" autocomplete="off" required>
+                </div>
+
+                <!-- Categorieds -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <select name="product_category" id="" class="form-select">
+                        <option value="">Select a Category</option>
+                        <option value="">CAKE</option>
+                        <option value="">CUPCAKE</option>
+                        <option value="">TREAT COMBO</option>
+                        <option value="">PANCAKE</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <!-- Image_1  -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="product_image1" class="form-label">Image_1</label>
+                    <input type="file" name="product_image1" id="product_image1" class="form-control" placeholder="Enter product image1" autocomplete="off" required>
+                </div>
+
+                <!-- Image_2  -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="product_image2" class="form-label">Image_2</label>
+                    <input type="file" name="product_image2" id="product_image2" class="form-control" placeholder="Enter product image2" autocomplete="off" required>
+                </div>
+
+                <!-- Image_3  -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="product_image3" class="form-label">Image_3</label>
+                    <input type="file" name="product_image3" id="product_image3" class="form-control" placeholder="Enter product image3" autocomplete="off" required>
+                </div>
+
+                <!-- price  -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="product_price" class="form-label">Price</label>
+                    <input type="text" name="product_price" id="product_image1price" class="form-control" placeholder="Enter product price" autocomplete="off" required>
+                </div>
+
+                <!-- price  -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <input type="submit" name="insert_product" class="btn btn-danger mb3 px-3" value="Insert Products">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Cakecity</span></strong>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="..\assets\js\main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CAKECITY</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://cdn.dotpe.in/longtail/store-logo/8200852/9aIFnzGJ.jpeg" rel="icon">
+  <link href="https://cdn.dotpe.in/longtail/store-logo/8200852/9aIFnzGJ.jpeg" rel="apple-touch-icon">
+  <script src="https://kit.fontawesome.com/eb675fda77.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/login.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <img src="https://cdn.dotpe.in/longtail/store-logo/8200852/9aIFnzGJ.jpeg" alt="CAKECITY">
+        <!-- <h1>CAKECITY<span>.</span></h1> -->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
+
+      </nav><!-- .navbar -->
+
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><sup>3 </sup></a>
+      <a class="btn-book-a-table" onclick="document.getElementById('id01').style.display='block'">Login</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+
+    <!-- User Login -->
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="index.html" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="assets\img\img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <button type="button" onclick="document.getElementById('id03').style.display='block';document.getElementById('id01').style.display='none'" class="cancelbtn">New User?</button>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none'" class="cancelbtn">Admin</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    </div>
+
+    <!-- Admin Login -->
+    <div id="id02" class="modal">
+      <form class="modal-content animate" action="admin\admin.html" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="assets\img\img_avatar2.png" alt="Avatar" class="avatar">
+        </div> 
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <!-- User Registration -->
+    <div id="id03" class="modal">
+      <form class="modal-content animate" action="index.html" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="assets\img\img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+          <label for="phno"><b>Phone Number</b></label>
+          <input type="text" placeholder="Enter Phone Number" name="Phno" required>
+          <label for="address"><b>Address</b></label>
+          <input type="text" placeholder="Enter Address" name="address" required>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="psw"><b>Confirm Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <div class="checkbox-content mt-3 mb-3">
+            <input type="checkbox" id="termCon" required>
+            <label for="termCon" class="text">I accepted all terms and conditions</label>
+          </div>
+          <button type="submit">Sign In</button>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">Let us bake <br>a sweet memory for you!</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Enrich every moment.</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#book-a-table" class="btn-book-a-table">Shop Now</a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p>Learn More <span>About Us</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
+            <div class="call-us position-absolute">
+              <h4>Shop Now</h4>
+              <p>+91 8431813385</p>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Cake City offers a unique and delicious cake experience. Our cakes are crafted with creativity and attention to detail, ensuring that each bite is filled with exceptional taste and flavor.
+                From classic vanilla to exotic fruits, our cakes offer a wide range of options to satisfy your taste buds.Whether you're looking for a light and flavorful option for a spring or summer Birthday, or a rich and indulgent chocolate cake, we have something for everyone.
+                <br> <br>When you take a bite of our cakes, you'll be transported to a world of flavor. We believe that every flavor tells a story, and our cakes are no exception. Indulge in a slice of happiness and experience the mouthwatering flavors that our freshly baked cakes have to offer.
+              </p>
+              <div class="position-relative mt-4">
+                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
+                <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Why Choose Cakecity?</h3>
+              <p>
+                Cake City offers exceptional taste and flavor in every bite, where creativity meets deliciousness.
+                Indulge in a slice of happiness and experience the mouthwatering flavors from our freshly baked cakes. </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="row gy-4">
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clock"></i>
+                  <h4>Freshly baked cakes for a delightful experience</h4>
+                  <p>Our cakes are freshly baked, ensuring that you have a delightful experience with every bite.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Creativity combined with deliciousness</h4>
+                  <p>Our cakes are crafted with creativity, ensuring that each cake is unique, special and delicious with handmade fondant decorations .</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Exceptional taste and flavor in every bite</h4>
+                  <p> Our cakes are crafted with creativity and attention to detail, ensuring that each bite is filled with exceptional taste and flavor.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p>Check Out Our <span> Menu</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-all">
+              <h4>All</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link " data-bs-toggle="tab" data-bs-target="#menu-cakes">
+              <h4>Cakes</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-eggless">
+              <h4>Eggless</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-egg">
+              <h4>Egg</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-others">
+              <h4>Others</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-all">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>All </h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-1.jpg" class="glightbox"><img src="assets\img\menu\menu-item-1.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.5.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-2.jpg" class="glightbox"><img src="assets\img\menu\menu-item-2.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.14.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-3.jpg" class="glightbox"><img src="assets\img\menu\menu-item-3.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.8.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-4.jpg" class="glightbox"><img src="assets\img\menu\menu-item-4.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-5.jpg" class="glightbox"><img src="assets\img\menu\menu-item-5.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-6.jpg" class="glightbox"><img src="assets\img\menu\menu-item-6.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.9.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End All Menu Content -->
+
+          <div class="tab-pane fade" id="menu-cakes">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Cakes </h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-1.jpg" class="glightbox"><img src="assets\img\menu\menu-item-1.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.5.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-2.jpg" class="glightbox"><img src="assets\img\menu\menu-item-2.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.14.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-3.jpg" class="glightbox"><img src="assets\img\menu\menu-item-3.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.8.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-4.jpg" class="glightbox"><img src="assets\img\menu\menu-item-4.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-5.jpg" class="glightbox"><img src="assets\img\menu\menu-item-5.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets\img\menu\menu-item-6.jpg" class="glightbox"><img src="assets\img\menu\menu-item-6.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.9.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Cakes Menu Content -->
+
+          <div class="tab-pane fade" id="menu-eggless">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Eggless</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.jpg" class="glightbox"><img src="assets/img/menu/menu-item-1.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.5.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.jpg" class="glightbox"><img src="assets/img/menu/menu-item-2.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.14.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.jpg" class="glightbox"><img src="assets/img/menu/menu-item-3.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.8.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.jpg" class="glightbox"><img src="assets/img/menu/menu-item-4.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.jpg" class="glightbox"><img src="assets/img/menu/menu-item-5.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.jpg" class="glightbox"><img src="assets/img/menu/menu-item-6.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.9.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Eggless Menu Content -->
+
+          <div class="tab-pane fade" id="menu-egg">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Added Egg</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.jpg" class="glightbox"><img src="assets/img/menu/menu-item-1.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.5.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.jpg" class="glightbox"><img src="assets/img/menu/menu-item-2.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.14.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.jpg" class="glightbox"><img src="assets/img/menu/menu-item-3.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.8.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.jpg" class="glightbox"><img src="assets/img/menu/menu-item-4.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.jpg" class="glightbox"><img src="assets/img/menu/menu-item-5.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.jpg" class="glightbox"><img src="assets/img/menu/menu-item-6.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.9.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Egg Menu Content -->
+
+          <div class="tab-pane fade" id="menu-others">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Others</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.jpg" class="glightbox"><img src="assets/img/menu/menu-item-1.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.5.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.jpg" class="glightbox"><img src="assets/img/menu/menu-item-2.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.14.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.jpg" class="glightbox"><img src="assets/img/menu/menu-item-3.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.8.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.jpg" class="glightbox"><img src="assets/img/menu/menu-item-4.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.jpg" class="glightbox"><img src="assets/img/menu/menu-item-5.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.12.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger"><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.jpg" class="glightbox"><img src="assets/img/menu/menu-item-6.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  Rs.9.95
+                </p>
+                <a href="#" class="btn btn-danger"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="sproduct.html" class="btn btn-danger" ><i class="fa-solid fa-eye"></i></a>
+
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Othes Menu Content -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>What Are They <span>Saying About Us</span></p>
+        </div>
+
+        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>John Larson</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Events</h2>
+          <p>Share <span>Your Moments</span> In Our Restaurant</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
+              <h3>Custom Cakes</h3>
+              <div class="price align-self-start">Rs.9900</div>
+              <p class="description">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
+              <h3>Party Treat Gifts</h3>
+              <div class="price align-self-start">Rs.289</div>
+              <p class="description">
+                In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
+              <h3>Birthday Cakes</h3>
+              <div class="price align-self-start">Rs.499</div>
+              <p class="description">
+                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
+              </p>
+            </div><!-- End Event item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+
+    <!-- ======= Shop Now Section ======= -->
+    <section id="shop-now" class="shop-now">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Shop NOw</h2>
+          <p>Order <span>Your Cake</span> From Us</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            <form action="forms/shop-now.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="weight" id="weight" placeholder="Weight in KG" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your cake request was sent. We will call back or send an Email to confirm your order. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Order Cake</button></div>
+            </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Shop Now Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>gallery</h2>
+          <p>Check <span>Our Gallery</span></p>
+        </div>
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Need Help? <span>Contact Us</span></p>
+        </div>
+
+        <div class="mb-3">
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA6BuhugILHbrfHoUkHcVzhEGeRhhX2ErA&q=12.86331547,75.05243406" frameborder="0" allowfullscreen></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>Our Address</h3>
+                <p>20-29(A),Ganga Pushpa Arcade, Melkar</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91 8431813385</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Opening Hours</h3>
+                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+                  <strong>Sunday:</strong> Closed
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-xl-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form><!--End Contact Form -->
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              20-29(A),Ganga Pushpa Arcade, <br>
+              Melkar<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong>+91 8431813385<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Cakecity</span></strong>
+      </div>
+
+    </div>
+
+  </footer><!-- End Footer -->
+  
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
